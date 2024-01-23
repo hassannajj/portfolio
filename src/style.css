@@ -8,22 +8,24 @@ body {
 header {
     background-color: #333;
     color: #fff;
-    padding: 1em;
+    padding: 1rem;
     text-align: center;
 }
 
 nav {
     display: flex;
-    justify-content: space-around;
+    justify-content: end;
     background-color: #444;
     padding: 0.5em;
     position: sticky;
     top: 0;
     z-index: 1000;
 }
-
 section {
-    padding: 2em;
-    margin: 2em 0;
+    padding: 2rem;
+    margin: 3rem 0;
     border-bottom: 1px solid #ddd;
 }
+
+
+
