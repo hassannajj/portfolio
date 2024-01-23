@@ -33,9 +33,14 @@ section {
 
 
 .link-items .resume {
+    text-decoration: none;
+    font-size: 0.9em;
     color: white;
     background-color: black;
-    height: 4em;
+    height: 1.5em;
+    padding: 0.5em;
+    padding-top: 0.75em;
+    border-radius: 0.5em;
 }
 
 
