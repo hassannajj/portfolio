@@ -5,21 +5,16 @@ body {
     box-sizing: border-box;
 }
 
-header {
-    background-color: #333;
-    color: #fff;
-    padding: 1rem;
-    text-align: center;
-}
-
 nav {
     display: flex;
-    justify-content: end;
-    background-color: #444;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #c0c0c0;
+    opacity: .95;
     padding: 0.5em;
     position: sticky;
     top: 0;
-    z-index: 1000;
+    z-index: 1;
 }
 section {
     padding: 2rem;
@@ -27,5 +22,20 @@ section {
     border-bottom: 1px solid #ddd;
 }
 
+
+/* HOME */
+
+.link-items {
+    display:flex;
+    gap: 1em;
+    align-items: center;
+}
+
+
+.link-items .resume {
+    color: white;
+    background-color: black;
+    height: 4em;
+}
 
 
