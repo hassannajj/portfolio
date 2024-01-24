@@ -1,3 +1,5 @@
+
+
 body {
     font-family: 'Arial', sans-serif;
     margin: 0;
@@ -9,19 +11,34 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #c0c0c0;
+    background-color: #8a8dca;
     opacity: .95;
     padding: 0.5em;
     position: sticky;
     top: 0;
     z-index: 1;
 }
+
+#home {
+    display: flex;
+    align-items: center;
+    gap: 4em;
+}
+#home .pic img {
+    width: 200px; /* Set the maximum width to 100% of its container */
+    height: auto;    /* Maintain the aspect ratio */
+    border-radius: 100px;
+  }
 section {
     padding: 2rem;
     margin: 3rem 0;
     border-bottom: 1px solid #ddd;
 }
 
+.section-title {
+    font-size: 3em;
+    margin-bottom: 1em;
+}
 
 /* HOME */
 
@@ -37,10 +54,56 @@ section {
     font-size: 0.9em;
     color: white;
     background-color: black;
-    height: 1.5em;
+    height: 2em;
     padding: 0.5em;
-    padding-top: 0.75em;
     border-radius: 0.5em;
+}
+
+
+
+/* Projects */
+
+iframe {
+    width: 45vw;
+    height: 60vh;
+}
+
+#projects .main {
+    display: flex;
+    gap: 5vw;
+}
+
+.project-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.project-tab {
+    min-height: 5em;
+    border: solid;
+    border-radius: 15px;
+    padding: 1em;
+}
+
+.project-tab .top-section {
+    display: flex;
+    justify-content: space-between;
+}
+
+.project-tab .top-section img {
+    scale: 0.5;
+}
+
+.project-tab .top-section .project-title {
+    font-size: 80%;
+}
+
+.project-tab .bottom-section {
+    display: none;
+}
+
+.project-tab .bottom-section.expanded {
+    display: block;
 }
 
 

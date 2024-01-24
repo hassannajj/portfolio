@@ -12,8 +12,7 @@ EMAIL: hhalnajj@uci.edu
   <meta name="author" content="Hassan Al-Najjar">
   <meta name="description" content="Hassan Al-Najjar's portfolio">
    <link rel="stylesheet" href="style.css">
-   <!--  Bootstrap here (?) -->
-  <title>Portfolio</title>
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">  <title>Portfolio</title>
 
 </head>
 
@@ -33,31 +32,38 @@ EMAIL: hhalnajj@uci.edu
   </nav>
 
   <section id="home">
-    <div class="name">Hassan Al-Najjar</div>
-    <div class="link-items">
-
-      <a class="resume" href="https://drive.google.com/file/d/1XRhZfKTQfrcgOeotanBCcdnt62z4ZOKJ/view?usp=share_link">My Resume
-      </a>
-
-      <a href="https://drive.google.com/file/d/1XRhZfKTQfrcgOeotanBCcdnt62z4ZOKJ/view?usp=share_link">
-        <img src="/images/icons8-github.svg" alt="github logo">
-      </a>
-
-      <a href="https://www.linkedin.com/in/hassan-al-najjar/">
-        <img src ="/images/icons8-linkedin.svg" alt="linkedIn logo">
-      </a>
-
-      <a href="mailto:hhalnajj@uci.edu">
-        <img src="/images/icons8-gmail.svg" alt="gmail logo">
-      </a>
-
-      <a href="google.com">
-        <img>
-      </a>
-
+    <div class="pic">
+      <img src="images/profile-pic-to-use.jpeg">
     </div>
-    <div class="career-title">Software Engineer</div>
     
+    <div class="right">
+      <div class="name">Hassan Al-Najjar</div>
+      <div class="link-items">
+  
+        <a class="resume" href="https://drive.google.com/file/d/1XRhZfKTQfrcgOeotanBCcdnt62z4ZOKJ/view?usp=share_link">My Resume
+        </a>
+  
+        <a class="github-logo" href="https://drive.google.com/file/d/1XRhZfKTQfrcgOeotanBCcdnt62z4ZOKJ/view?usp=share_link">
+          <img src="images/icons8-github.svg" alt="github logo">
+        </a>
+  
+        <a class="linkedin-logo" href="https://www.linkedin.com/in/hassan-al-najjar/">
+          <img src ="images/icons8-linkedin.svg" alt="linkedIn logo">
+        </a>
+  
+        <a class="gmail-logo" href="mailto:hhalnajj@uci.edu">
+          <img src="images/icons8-gmail.svg" alt="gmail logo">
+        </a>
+  
+        <a href="google.com">
+          <img>
+        </a>
+  
+      </div>
+      <div class="career-title">Software Engineer</div>
+      
+    </div>
+
     
 
     
@@ -66,23 +72,122 @@ EMAIL: hhalnajj@uci.edu
 
   <section id="about">
     <div class="section-title">About</div>
-    I am a Full Stack Developer 
+    Hello! I'm Hassan Al-Najjar, a dedicated creator navigating 
+    the digital landscape. My passion for technology 
+    started at a young age, making me the go-to tech 
+    guy among family and friends.
+    I've built an
+     Emotion Recognition Model achieving a remarkable 
+     testing accuracy of 92.25%. Leading a full stack 
+     team in the Webreg Hackathon secured us 2nd place 
+     and a $2,000 prize for revamping the university's 
+     registration system. Beyond coding, I've ventured 
+     into crafting user-friendly platforms like Study 
+     Finder and a Tutor Scheduling Platform, showcasing 
+     my commitment to enhancing user experiences. From
+      designing an interactive game for elementary school
+       students to developing cool websites, I find 
+       joy in bringing ideas to life.🚀
 </section>
 
 
   <section id="projects">
       <div class="section-title">Projects</div>
+      <div class="main">
 
-      <div class="featured-project">
-        <iframe src="https://senghounglim.github.io/WebReg2.0/" width="500" height="500" frameborder="0"></iframe>
+        <div class="project-list">
+          <div class="project-tab" id="project-tab1" onclick="toggleTab(1)">
+
+            <div class="top-section">
+              <div class="project-title">
+                Webreg Reimagined
+              </div>
+              <img class="triangle-toggle" src="images/icons8-triangle-24.png" alt="triangle toggle">
+            </div>
+            <div class="bottom-section expanded">
+              <div class="project-description">
+                This was a project in improving the UCI registration system
+              </div>
+  
+              <div class="project-languages">
+                HTML, CSS, JS, Python
+              </div>
+            </div>
+
+          </div>
+          <div class="project-tab" id="project-tab2" onclick="toggleTab(2)">
+
+            <div class="top-section">
+              <div class="project-title">
+                Emotion Detector Model
+              </div>
+              <img class="triangle-toggle" src="images/icons8-triangle-24.png" alt="triangle toggle">
+            </div>
+            <div class="bottom-section">
+            <div class="project-description">
+              This project involved a emotion detector model that is able to read human emotion
+            </div>
+
+            <div class="project-languages">
+              Python, PyTorch
+            </div>
+            </div>
+          </div>
+
+          <div class="project-tab" id="project-tab3" onclick="toggleTab(3)">
+
+            <div class="top-section">
+              <div class="project-title">
+                Color Guessr
+              </div>
+              <img class="triangle-toggle" src="images/icons8-triangle-24.png" alt="triangle toggle">
+
+            </div>
+            <div class="bottom-section">
+            <div class="project-description">
+              This was a game where you could guess the color using RGB Values
+            </div>
+
+            <div class="project-languages">
+              HTML, CSS, JS
+            </div>
+          </div>
+
+          </div>
+          <div class="project-tab" id="project-tab4" onclick="toggleTab(4)">
+
+            <div class="top-section">
+              <div class="project-title">
+                Tutor Scheduler 
+              </div>
+              <img class="triangle-toggle" src="images/icons8-triangle-24.png" alt="triangle toggle">
+
+            </div>
+            <div class="bottom-section">
+            <div class="project-description">
+              This was a project that enables Tutors and Students to use a software that matches each other based on schedule availablity
+            </div>
+
+            <div class="project-languages">
+              MongoDB, Express, React, Node, JS
+            </div>
+            </div> 
+
+          </div>
+        </div>
+        <div id="display-square" class="display-square">
+          <iframe src="https://senghounglim.github.io/WebReg2.0/"></iframe>
+        </div>
+
       </div>
 
-      <p>Lorem ipsum Lorem ipsum Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. sit amet, consectetur adipiscing elit. ...</p>
   </section>
 
   <section id="skills">
     <div class="section-title">Skills</div>
-    <p>Lorem ipsum Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. sit amet, consectetur adipiscing elit. ...</p>
+    Python, JavaScript, C, C++, MySQL, Assembly Language, HTML, CSS, Node, React, Express, Linux, Git, Bash, Docker, AWS
+
+
   </section>
   
 
@@ -94,5 +199,7 @@ EMAIL: hhalnajj@uci.edu
   </p>
 
   <script src="script.js"></script>
+  <script src="tabs.js"></script>
+
 </body>
 </html>
